@@ -104,3 +104,50 @@ print("Data_Type :",type(bonus))
 
 print("Value : ",is_permanent)
 print("Data_Type :",type(is_permanent))
+
+# ==================================================
+# Practice 6
+# ==================================================
+
+# Convert "100" into an integer.
+# Print the value and its data type.
+
+
+# Write your code below 👇
+value = "100"
+
+print("Before:", value, type(value))
+value = int(100)
+print("After:", value, type(value))
+
+
+# ==================================================
+# Practice 7
+# ==================================================
+
+# Convert 250 into a float.
+# Print the value and its data type.
+
+
+# Write your code below 👇
+value = 250
+
+print("Before:", value, type(value))
+value = float(250)
+print("After:", value, type(value))
+
+
+# ==================================================
+# Practice 8
+# ==================================================
+
+# Convert 8.95 into an integer.
+# Print the value and its data type.
+
+
+# Write your code below 👇
+value = 8.95
+
+print("Before:", value, type(value))
+value = int(8.95)
+print("After:", value, type(value))
