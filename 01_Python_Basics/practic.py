@@ -56,3 +56,51 @@ total_sales = 150000
 profit = 25000
 print("Total_Sales : ",total_sales)
 print("Profit : ",profit)
+
+
+# ==================================================
+# Practice 4
+# ==================================================
+
+# Create a variable named price with the value 499.99.
+# Print its value.
+# Print its data type.
+
+
+# Write your code below 👇
+price = 499.99
+
+print("Value : ",price)
+print("Data_Type :",type(price))
+
+
+# ==================================================
+# Practice 5
+# ==================================================
+
+# Create the following variables:
+# - employee_name = "Amit"
+# - salary = 55000
+# - bonus = 7500.50
+# - is_permanent = True
+#
+# Print the data type of each variable.
+
+
+# Write your code below 👇
+employee_name = "Amit"
+salary = 55000
+bonus = 7500.50
+is_permanent = True
+
+print("Value : ",employee_name)
+print("Data_Type :",type(employee_name))
+
+print("Value : ",salary)
+print("Data_Type :",type(salary))
+
+print("Value : ",bonus)
+print("Data_Type :",type(bonus))
+
+print("Value : ",is_permanent)
+print("Data_Type :",type(is_permanent))
