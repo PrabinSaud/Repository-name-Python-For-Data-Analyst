@@ -224,3 +224,50 @@ set1 = {"Python", "SQL"}
 set2 = {"SQL", "Power BI"}
 unique_values = set1.union(set2)
 print("Unique Values :", unique_values)
+
+
+# ==========================================
+# Topic 4 : Dictionaries
+# ==========================================
+
+# Practice 21
+#
+# Create a dictionary with:
+# name, age, city
+# Print the dictionary.
+dict = {
+    "name": "Rahul",
+    "age": 21,
+    "city": "New York"
+}
+print("Dictionary :", dict)
+
+
+# Practice 22
+#
+# Print only the student's name.
+print("Name :", dict["name"])
+
+
+# Practice 23
+#
+# Add a new key:
+# "course": "BCA"
+dict["course"] = "BCA"
+print("Updated Dictionary :", dict) 
+
+# Practice 24
+#
+# Update the age.
+dict["age"] = 22
+print("Updated Age :", dict["age"]) 
+
+# Practice 25
+#
+# Print:
+# keys()
+# values()
+# items()
+print("Keys :", dict.keys())
+print("Values :", dict.values())
+print("Items :", dict.items())
