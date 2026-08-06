@@ -163,3 +163,64 @@ print("Length of Tuple :", len(cities))
 # Print the index of "SQL".
 skills = ("Python", "SQL", "Excel")
 print("Index of SQL :", skills.index("SQL"))
+
+# ==========================================
+# Topic 3 : Sets
+# ==========================================
+
+# Practice 16
+#
+# Create a set of five fruits.
+# Print the set.
+fruits = {"Apple", "Banana", "Mango", "Orange", "Grapes"}
+print(fruits)
+
+# Practice 17
+#
+# Create:
+# numbers = {10, 20, 30}
+#
+# Add 40.
+# Print the updated set.
+numbers = {10, 20, 30}
+numbers.add(40)
+print("Updated Set :", numbers)
+
+
+# Practice 18
+#
+# Remove "Python" from:
+#
+# {"Python", "SQL", "Excel"}
+skills = {"Python", "SQL", "Excel"}
+skills.remove("Python")
+print("Updated Set :", skills)
+
+
+# Practice 19
+#
+# Find the common values between:
+#
+# {1,2,3,4}
+#
+# and
+#
+# {3,4,5,6}
+set1 = {1, 2, 3, 4}
+set2 = {3, 4, 5, 6}
+common_values = set1.intersection(set2)
+print("Common Values :", common_values)
+
+# Practice 20
+#
+# Find all unique values from:
+#
+# {"Python","SQL"}
+#
+# and
+#
+# {"SQL","Power BI"}
+set1 = {"Python", "SQL"}
+set2 = {"SQL", "Power BI"}
+unique_values = set1.union(set2)
+print("Unique Values :", unique_values)
