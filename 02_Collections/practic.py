@@ -49,3 +49,64 @@ print(list)
 languages = ["Python", "SQL", "Excel"]
 languages.remove("SQL")
 print(languages)
+
+# ==========================================
+# Topic 1 : Lists (Part 2)
+# ==========================================
+
+# Practice 6
+#
+# Create:
+# fruits = ["Apple", "Banana"]
+#
+# Insert "Orange" at index 1.
+fruits = ["Apple", "Banana"]
+fruits.insert(1, "Orange")  
+print(fruits)
+
+
+# Practice 7
+#
+# Create:
+# list1 = [10,20]
+# list2 = [30,40]
+#
+# Combine both lists.
+list1 = [10, 20]
+list2 = [30, 40]
+list1.extend(list2)
+print(list1)
+
+
+
+# Practice 8
+#
+# Create:
+# numbers = [100,200,300]
+#
+# Remove the last number using pop().
+# Print the removed value.
+# Print the updated list.
+numbers = [100, 200, 300]
+removed_value = numbers.pop()
+print("Removed Value :", removed_value)
+print("Updated List :", numbers)
+
+# Practice 9
+#
+# Sort:
+#
+# [45,12,89,32,56]
+
+marks = [45, 12, 89, 32, 56]
+marks.sort()
+print("Sorted :", marks)
+
+# Practice 10
+#
+# Reverse:
+#
+# [10,20,30,40,50]
+numbers = [10, 20, 30, 40, 50]  
+numbers.reverse()
+print("Reversed :", numbers)    
