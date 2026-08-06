@@ -151,3 +151,70 @@ value = 8.95
 print("Before:", value, type(value))
 value = int(8.95)
 print("After:", value, type(value))
+
+# ==================================================
+# Practice 10
+# ==================================================
+
+# Create two numbers:
+# num1 = 50
+# num2 = 8
+#
+# Print:
+# Addition
+# Subtraction
+# Multiplication
+# Division
+
+
+# Write your code below 👇
+num1 = 50
+num2 = 8
+
+print("Addition : ",num1 + num2)
+print("Subtraction : ",num1 - num2)
+print("Multiplication : ",num1 * num2)
+print("Division : ",num1 / num2)
+
+
+# ==================================================
+# Practice 11
+# ==================================================
+
+# Compare:
+# 100 and 75
+#
+# Print:
+# >
+# <
+# ==
+# !=
+
+
+# Write your code below 👇
+num1 = 100
+num2 = 75
+
+print("Greater than : ",num1 > num2)
+print("Less than : ",num1 < num2)
+print("Equal to : ",num1 == num2)
+print("Not Equal to : ",num1 != num2)
+
+
+# ==================================================
+# Practice 12
+# ==================================================
+
+# Create:
+# skills = ["Python", "SQL", "Excel"]
+#
+# Check:
+# "Python" in skills
+# "Tableau" in skills
+
+
+# Write your code below 👇
+skills = ["Python", "SQL", "Excel"]
+
+print("Python in skills : ", "Python" in skills)
+print("Tableau in skills : ", "Tableau" in skills)
