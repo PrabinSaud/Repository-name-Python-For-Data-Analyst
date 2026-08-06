@@ -218,3 +218,55 @@ skills = ["Python", "SQL", "Excel"]
 
 print("Python in skills : ", "Python" in skills)
 print("Tableau in skills : ", "Tableau" in skills)
+
+
+# ==================================================
+# Practice 13
+# ==================================================
+
+# Ask the user to enter:
+# - Name
+# - Age
+#
+# Print both values.
+
+
+# Write your code below 👇
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+
+print("Name : ",name)
+print("Age : ",age)
+
+
+# ==================================================
+# Practice 14
+# ==================================================
+
+# Ask the user to enter:
+# - Product Name
+# - Price
+#
+# Print both values.
+
+
+# Write your code below 👇
+product_name = input("Enter Product Name: ")
+price = input("Enter Price: ")
+
+print("Product Name : ",product_name)
+print("Price : ",price)
+
+
+# ==================================================
+# Practice 15
+# ==================================================
+
+# Ask the user to enter two numbers.
+# Print their sum.
+
+
+# Write your code below 👇
+num1 = float(input("Enter first number: "))
+num2 = float(input("Enter second number: "))
+print("Sum : ",num1 + num2)
