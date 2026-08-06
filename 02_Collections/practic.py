@@ -110,3 +110,56 @@ print("Sorted :", marks)
 numbers = [10, 20, 30, 40, 50]  
 numbers.reverse()
 print("Reversed :", numbers)    
+
+
+# ==========================================
+# Topic 2 : Tuples
+# ==========================================
+
+# Practice 11
+#
+# Create a tuple of five colors.
+# Print the first and last color.
+colors = ("Red", "Green", "Blue", "Yellow", "Purple")
+print("First Color :", colors[0])
+print("Last Color  :", colors[-1])
+
+# Practice 12
+#
+# Create:
+# numbers = (10, 20, 30, 10, 40, 10)
+#
+# Count how many times 10 appears.
+numbers = (10, 20, 30, 10, 40, 10)
+print("Count of 10 :", numbers.count(10))
+
+
+# Practice 13
+#
+# Create:
+# employee = ("Rahul", "HR", 45000)
+#
+# Unpack the tuple and print each value.
+
+employee = ("Rahul", "HR", 45000)
+name, department, salary = employee
+print("Name       :", name)
+print("Department :", department)
+print("Salary     :", salary)
+
+# Practice 14
+#
+# Create a tuple of four cities.
+# Print the length of the tuple.
+
+cities = ("New York", "Los Angeles", "Chicago", "Houston")
+print("Length of Tuple :", len(cities))
+
+# Practice 15
+#
+# Create:
+# skills = ("Python", "SQL", "Excel")
+#
+# Print the index of "SQL".
+skills = ("Python", "SQL", "Excel")
+print("Index of SQL :", skills.index("SQL"))
