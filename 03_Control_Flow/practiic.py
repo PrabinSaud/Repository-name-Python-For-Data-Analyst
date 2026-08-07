@@ -113,3 +113,81 @@ if salary >= target:
     print("Target Achieved")    
 else:
     print("Target Missed")
+
+# ==========================================
+# Topic 3 : Elif
+# ==========================================
+
+# Practice 9
+#
+# Create:
+# marks = 92
+#
+# Print:
+# A if marks >= 90
+# B if marks >= 75
+# C if marks >= 60
+# Otherwise Fail
+marks = 92
+if marks >= 90:
+    print("A")
+elif marks >= 75:
+    print("B")
+elif marks >= 60:
+    print("C")
+else:
+    print("Fail")
+
+# Practice 10
+#
+# Create:
+# age = 35
+#
+# Print:
+# Child
+# Teenager
+# Adult
+# Senior Citizen
+age = 35
+if age >= 60:
+    print("Senior Citizen")
+elif age >= 18:
+    print("Adult")
+elif age >= 13:
+    print("Teenager")
+else:
+    print("Child")
+
+# Practice 11
+#
+# Create:
+# salary = 65000
+#
+# Print:
+# High
+# Medium
+# Low
+salary = 65000
+if salary >= 100000:
+    print("High")
+elif salary >= 50000:
+    print("Medium")
+else:
+    print("Low")
+
+# Practice 12
+#
+# Create:
+# purchase = 12000
+#
+# Print:
+# 20% Discount
+# 10% Discount
+# No Discount
+purchase = 12000
+if purchase >= 10000:
+    print("20% Discount")
+elif purchase >= 5000:
+    print("10% Discount")
+else:
+    print("No Discount")
