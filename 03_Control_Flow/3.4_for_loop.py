@@ -65,3 +65,43 @@ monthly_sales = [45000, 52000, 38000, 61000]
 for sale in monthly_sales:
     if sale >= 50000:
         print("Target Achieved :", sale)
+
+
+# ==========================================
+# Topic 5 : While Loop
+# ==========================================
+
+# Practice 17
+#
+# Print numbers from 1 to 10 using a while loop.
+count = 1
+while count <= 10:
+    print(count)
+    count += 1
+
+# Practice 18
+#
+# Print even numbers from 2 to 20 using a while loop.
+number = 2
+while number <= 20:
+    print(number)
+    number += 2
+
+
+# Practice 19
+#
+# Print numbers from 10 down to 1.
+count = 10
+while count >= 1:
+    print(count)
+    count -= 1
+
+
+# Practice 20
+#
+# Print the multiplication table of 7.
+table = 7
+i = 1
+while i <= 10:
+    print(table, "x", i, "=", table * i)
+    i += 1
