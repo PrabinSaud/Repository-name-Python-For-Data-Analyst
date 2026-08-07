@@ -191,3 +191,49 @@ elif purchase >= 5000:
     print("10% Discount")
 else:
     print("No Discount")
+
+# ==========================================
+# Topic 4 : For Loop
+# ==========================================
+
+# Practice 13
+#
+# Create:
+# fruits = ["Apple", "Banana", "Mango"]
+#
+# Print every fruit.
+fruits = ["Apple", "Banana", "Mango"]
+for fruit in fruits:
+    print(fruit)    
+
+# Practice 14
+#
+# Create:
+# numbers = [5, 10, 15, 20]
+#
+# Print each number multiplied by 3.
+numbers = [5, 10, 15, 20]
+for number in numbers:
+    print(number * 3)
+
+# Practice 15
+#
+# Create:
+# marks = [35, 80, 55, 92, 28]
+#
+# Print only marks that are greater than or equal to 40.
+marks = [35, 80, 55, 92, 28]
+for mark in marks:
+    if mark >= 40:
+        print(mark)
+
+# Practice 16
+#
+# Create:
+# sales = [25000, 45000, 60000, 38000]
+#
+# Print "Target Achieved" only for sales greater than or equal to 50000.
+sales = [25000, 45000, 60000, 38000]
+for sale in sales:
+    if sale >= 50000:
+        print("Target Achieved")

@@ -1,66 +1,67 @@
 """
 ====================================================
 Module      : 03 - Control Flow
-Lesson      : 01
-Topic       : If Statement
+Lesson      : 04
+Topic       : For Loop
 Author      : Prabin Saud
 Repository  : Python-For-Data-Analyst
 ====================================================
 """
 
 # ==================================================
-# What is an If Statement?
+# What is a For Loop?
 # ==================================================
 
-# An if statement executes code only when a condition is True.
-
-
-# ==================================================
-# Example 1 : Simple If
-# ==================================================
-
-age = 20
-
-if age >= 18:
-    print("Eligible to Vote")
+# A for loop repeats a block of code for each item
+# in a collection.
 
 
 # ==================================================
-# Example 2 : Marks
+# Example 1 : Print Numbers
 # ==================================================
 
-marks = 78
+numbers = [10, 20, 30, 40, 50]
 
-if marks >= 40:
-    print("Pass")
-
-
-# ==================================================
-# Example 3 : Salary
-# ==================================================
-
-salary = 55000
-
-if salary > 50000:
-    print("High Salary")
+for number in numbers:
+    print(number)
 
 
 # ==================================================
-# Example 4 : Membership
+# Example 2 : Student Names
 # ==================================================
 
-skills = ["Python", "SQL", "Excel"]
+students = ["Rahul", "Amit", "Neha", "Prawin"]
 
-if "Python" in skills:
-    print("Python Found")
+for student in students:
+    print(student)
+
+
+# ==================================================
+# Example 3 : Sales
+# ==================================================
+
+sales = [25000, 28000, 31000, 35000]
+
+for sale in sales:
+    print("Monthly Sale :", sale)
+
+
+# ==================================================
+# Example 4 : Multiply by 2
+# ==================================================
+
+numbers = [5, 10, 15, 20]
+
+for number in numbers:
+    print(number * 2)
 
 
 # ==================================================
 # Example 5 : Real Data Analyst Example
 # ==================================================
 
-sales = 65000
-target = 50000
+monthly_sales = [45000, 52000, 38000, 61000]
 
-if sales >= target:
-    print("Target Achieved")
+for sale in monthly_sales:
+    if sale >= 50000:
+        print("Target Achieved :", sale)
