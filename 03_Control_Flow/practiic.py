@@ -237,3 +237,58 @@ sales = [25000, 45000, 60000, 38000]
 for sale in sales:
     if sale >= 50000:
         print("Target Achieved")
+
+# ==========================================
+# Topic 6 : Break & Continue
+# ==========================================
+
+# Practice 21
+#
+# Print numbers from 1 to 10.
+# Stop the loop when the number becomes 6.
+for number in range(1, 11):
+    if number == 6:
+        break
+    print(number)   
+
+
+# Practice 22
+#
+# Print numbers from 1 to 10.
+# Skip number 5.
+for number in range(1, 11):
+    if number == 5:
+        continue
+    print(number)
+
+# Practice 23
+#
+# Create:
+#
+# marks = [45, 65, -1, 78, 92]
+#
+# Stop printing when -1 is found.
+marks = [45, 65, -1, 78, 92]
+index = 0
+while index < len(marks):
+    if marks[index] == -1:
+        break
+    print(marks[index])
+    index += 1
+
+# Practice 24
+#
+# Create:
+#
+# marks = [45, None, 78, None, 92]
+#
+# Skip None values and print only valid marks.
+marks = [45, None, 78, None, 92]
+index = 0   
+
+while index < len(marks):
+    if marks[index] is None:
+        index += 1
+        continue
+    print(marks[index])
+    index += 1
