@@ -64,7 +64,7 @@ After completing this module, I will be able to:
 
 ## 📁 Module Structure
 
-```text
+```texts
 04_Functions/
 │
 ├── README.md
