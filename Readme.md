@@ -186,9 +186,9 @@ Every lesson follows the same process.
 
 ## Python
 
-- [ ] Python Basics
-- [ ] Collections
-- [ ] Control Flow
+- [x] Python Basics
+- [x] Collections
+- [x] Control Flow
 - [ ] Functions
 - [ ] Strings
 - [ ] File Handling
