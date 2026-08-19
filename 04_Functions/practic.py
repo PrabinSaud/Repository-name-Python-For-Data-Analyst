@@ -315,3 +315,263 @@ def sales_target(sales, target):
     else:
         print("Target Missed")
 sales_target(75000, 50000)
+
+
+
+# ==================================================
+# Topic 2 : Return
+# ==================================================
+
+# Practice 11
+#
+# Create a function:
+#
+# add_numbers(a, b)
+#
+# Return the sum of two numbers.
+#
+# Store the result in a variable and print it.
+#
+# Example:
+# result = add_numbers(10, 20)
+# print(result)
+
+
+# Write your code below 👇
+def add_numbers(a, b):
+    return a + b
+
+result = add_numbers(10, 20)
+print(result)
+
+# ==================================================
+# Practice 12
+#
+# Create a function:
+#
+# multiply_numbers(a, b)
+#
+# Return the multiplication of two numbers.
+#
+# Example:
+# multiply_numbers(10, 5)
+#
+# Expected:
+# 50
+
+
+# Write your code below 👇
+def multiply_numbers(a, b):
+    return a * b
+result = multiply_numbers(10, 5)
+print(result)
+
+
+# ==================================================
+# Practice 13
+#
+# Create a function:
+#
+# calculate_square(number)
+#
+# Return the square of the number.
+#
+# Example:
+# calculate_square(8)
+#
+# Expected:
+# 64
+
+
+# Write your code below 👇
+def calculate_square(number):
+    return number ** 2
+result = calculate_square(8)
+print(result)
+
+
+# ==================================================
+# Practice 14
+#
+# Create a function:
+#
+# calculate_average(mark1, mark2, mark3)
+#
+# Return the average of three marks.
+#
+# Example:
+# calculate_average(80, 70, 90)
+
+
+# Write your code below 👇
+def calculate_average(mark1, mark2, mark3):
+    average = (mark1 + mark2 + mark3) / 3
+    return average
+result = calculate_average(80, 70, 90)
+print(result)
+
+
+# ==================================================
+# Practice 15
+#
+# Create a function:
+#
+# calculate_total(price, quantity)
+#
+# Return:
+#
+# price * quantity
+#
+# Store the returned value in:
+#
+# total
+#
+# Then print total.
+
+
+# Write your code below 👇
+def calculate_total(price, quantity):
+    return price * quantity
+result = calculate_total(100, 5)
+print(result)
+
+
+# ==================================================
+# Practice 16
+#
+# Create a function:
+#
+# calculate_profit(revenue, cost)
+#
+# Return the profit.
+#
+# Formula:
+#
+# profit = revenue - cost
+#
+# Example:
+# calculate_profit(100000, 65000)
+#
+# Expected:
+# 35000
+
+
+# Write your code below 👇
+def calculate_profit(revenue, cost):
+    return revenue - cost
+result = calculate_profit(100000, 65000)
+print(result)
+
+# ==================================================
+# Practice 17
+#
+# Create a function:
+#
+# calculate_discount(price, discount)
+#
+# Return the final price after discount.
+#
+# Formula:
+#
+# discount_amount = price * discount / 100
+# final_price = price - discount_amount
+#
+# Example:
+# calculate_discount(2000, 10)
+#
+# Expected:
+# 1800
+
+
+# Write your code below 👇
+def calculate_discount(price, discount):
+    discount_amount = price * discount / 100
+    final_price = price - discount_amount
+    return final_price
+
+result = calculate_discount(2000, 10)
+print(result)
+
+
+# ==================================================
+# Practice 18
+#
+# Create a function:
+#
+# check_pass(marks)
+#
+# Return:
+#
+# "Pass" if marks >= 40
+# "Fail" otherwise.
+#
+# Example:
+# check_pass(75)
+#
+# Expected:
+# Pass
+
+
+# Write your code below 👇
+def check_pass(marks):
+    if marks >= 40:
+        return "Pass"
+    return "Fail"
+
+result = check_pass(75)
+print(result)
+
+
+# ==================================================
+# Practice 19
+#
+# Create a function:
+#
+# calculate_salary(basic_salary, bonus)
+#
+# Return the total salary.
+#
+# Example:
+# calculate_salary(30000, 5000)
+#
+# Expected:
+# 35000
+
+
+# Write your code below 👇
+def calculate_salary(basic_salary, bonus):
+    total_salary = basic_salary + bonus
+    return total_salary
+
+result = calculate_salary(30000, 5000)
+print(result)
+
+
+# ==================================================
+# Practice 20 : Data Analyst Task
+#
+# Create a function:
+#
+# calculate_profit_margin(revenue, cost)
+#
+# Calculate:
+#
+# profit = revenue - cost
+# profit_margin = (profit / revenue) * 100
+#
+# Return the profit margin.
+#
+# Example:
+# calculate_profit_margin(100000, 70000)
+#
+# Expected:
+# 30.0
+
+
+# Write your code below 👇
+def calculate_profit_margin(revenue, cost):
+    profit = revenue - cost
+    profit_margin = (profit / revenue) * 100
+    return profit_margin
+result = calculate_profit_margin(100000, 70000)
+print(result)
