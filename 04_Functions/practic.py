@@ -9,6 +9,9 @@
 # Create a function named show_name().
 # Print your name.
 # Call the function.
+from csv import excel
+
+
 def show_name():
     print("Your Name")
 
@@ -575,3 +578,249 @@ def calculate_profit_margin(revenue, cost):
     return profit_margin
 result = calculate_profit_margin(100000, 70000)
 print(result)
+
+# ==================================================
+# Topic 3 : Default Arguments
+# ==================================================
+
+# Practice 21
+#
+# Create a function:
+#
+# greet(name="Prabin")
+#
+# Print:
+# Hello <name>
+#
+# Call the function once without an argument
+# and once with an argument.
+
+
+# Write your code below 👇
+def greet(name="Prabin"):
+    print("Hello", name)
+
+greet()
+greet("Rahul")
+
+
+# ==================================================
+# Practice 22
+#
+# Create a function:
+#
+# student_info(name, age=18)
+#
+# Print the student's name and age.
+#
+# Test the function with and without age.
+
+
+# Write your code below 👇
+def student_info(name, age=18):
+    print("Name :", name)
+    print("Age  :", age)
+
+student_info("Prabin")
+student_info("Rahul", 22)
+
+
+# ==================================================
+# Practice 23
+#
+# Create a function:
+#
+# employee_info(name, department="IT")
+#
+# Print employee name and department.
+#
+# Test both default and custom department.
+
+
+# Write your code below 👇
+def employee_info(name, department="IT"):
+    print("Name       :", name)
+    print("Department :", department)
+
+employee_info("Prabin")
+employee_info("Rahul", "Finance")
+
+
+# ==================================================
+# Practice 24
+#
+# Create a function:
+#
+# calculate_total(price, quantity=1)
+#
+# Calculate:
+#
+# total = price * quantity
+#
+# Test:
+#
+# calculate_total(500)
+# calculate_total(500, 3)
+
+
+# Write your code below 👇
+def calculate_total(price, quantity=1):
+    total = price * quantity
+    print("Total :", total)
+
+calculate_total(500)
+calculate_total(500, 3)
+
+
+# ==================================================
+# Practice 25
+#
+# Create a function:
+#
+# calculate_discount(price, discount=10)
+#
+# Calculate the final price after discount.
+#
+# Test:
+#
+# calculate_discount(1000)
+# calculate_discount(1000, 20)
+
+
+# Write your code below 👇
+def calculate_discount(price, discount=10):
+    discount_amount = price * discount / 100
+    final_price = price - discount_amount
+    print("Final Price :", final_price)
+
+calculate_discount(1000)
+calculate_discount(1000, 20)
+
+
+# ==================================================
+# Practice 26
+#
+# Create a function:
+#
+# check_target(sales, target=50000)
+#
+# Return:
+#
+# "Target Achieved"
+# "Target Missed"
+#
+# Test with default and custom targets.
+
+
+# Write your code below 👇
+def check_target(sales, target=50000):
+    if sales >= target:
+        return "Target Achieved"
+    return "Target Missed"
+
+result1 = check_target(60000)
+result2 = check_target(45000)
+
+
+# ==================================================
+# Practice 27
+#
+# Create a function:
+#
+# calculate_salary(basic_salary, bonus=5000)
+#
+# Return the total salary.
+#
+# Test:
+#
+# calculate_salary(30000)
+# calculate_salary(30000, 10000)
+
+
+# Write your code below 👇
+def calculate_salary(basic_salary, bonus=5000):
+    total_salary = basic_salary + bonus
+    return total_salary
+
+salary1 = calculate_salary(30000)
+salary2 = calculate_salary(30000, 10000)
+
+
+# ==================================================
+# Practice 28
+#
+# Create a function:
+#
+# student_result(name, python=0, sql=0, excel=0)
+#
+# Calculate and return total marks.
+#
+# Example:
+#
+# student_result("Prabin", 80, 75, 90)
+#
+# Expected:
+# 245
+
+
+# Write your code below 👇
+def student_result(name, python=0, sql=0, excel=0):
+    total = python + sql + excel
+    return total
+student1_total = student_result("Prabin", 80, 75, 90)
+print(f"Total marks for {student1_total}")
+
+
+# ==================================================
+# Practice 29
+#
+# Create a function:
+#
+# calculate_profit(revenue, cost=50000)
+#
+# Return:
+#
+# revenue - cost
+#
+# Test the function with the default cost
+# and a custom cost.
+
+
+# Write your code below 👇
+def calculate_profit(revenue, cost=50000):
+    profit = revenue - cost
+    return profit
+custom_profit = calculate_profit(100000, 60000)
+default_profit = calculate_profit(100000)
+
+
+# ==================================================
+# Practice 30 : Data Analyst Task
+#
+# Create a function:
+#
+# sales_report(sales, target=50000)
+#
+# Return:
+#
+# "Target Achieved" if sales >= target
+# "Target Missed" otherwise
+#
+# Test the function using:
+#
+# 1. Default target
+# 2. Custom target
+#
+# Example:
+#
+# sales_report(75000)
+# sales_report(75000, 80000)
+
+
+# Write your code below 👇
+def sales_report(sales, target=50000):
+    if sales >= target:
+        return "Target Achieved"
+    return "Target Missed"
+sales1 = sales_report(75000)
+sales2 = sales_report(75000, 80000)
