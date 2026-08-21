@@ -824,3 +824,265 @@ def sales_report(sales, target=50000):
     return "Target Missed"
 sales1 = sales_report(75000)
 sales2 = sales_report(75000, 80000)
+
+
+
+# ==================================================
+# Topic 4 : Scope
+# ==================================================
+
+# Practice 31
+#
+# Create a function:
+#
+# student_info()
+#
+# Create a local variable:
+#
+# name = "Prabin"
+#
+# Print the name inside the function.
+
+
+# Write your code below 👇
+def student_info():
+    name = "Prabin"
+    print("Name :", name)
+
+student_info()
+
+
+# ==================================================
+# Practice 32
+#
+# Create a local variable inside a function:
+#
+# salary = 30000
+#
+# Print it inside the function.
+#
+# Then try printing salary outside the function.
+#
+# Observe what happens.
+
+
+# Write your code below 👇
+def calculate_salary():
+    salary = 30000
+    print("Salary :", salary)
+
+calculate_salary() 
+print(salary)  # This would cause an error because salary is not defined outside the function
+
+
+# ==================================================
+# Practice 33
+#
+# Create a global variable:
+#
+# company = "ABC Ltd"
+#
+# Create a function that prints the company name.
+#
+# Call the function.
+
+
+# Write your code below 👇
+company = "ABC Ltd"
+def print_company():
+    print("Company :", company)
+
+print_company()
+
+
+# ==================================================
+# Practice 34
+#
+# Create:
+#
+# target = 50000
+#
+# Create a function:
+#
+# check_sales(sales)
+#
+# Print both sales and target.
+
+
+# Write your code below 👇
+def check_sales(sales):
+    target = 50000
+    print("Sales :", sales)
+    print("Target :", target)
+
+check_sales(75000)
+
+
+# ==================================================
+# Practice 35
+#
+# Create:
+#
+# name = "Prabin"
+#
+# Inside a function create another variable:
+#
+# name = "Rahul"
+#
+# Print name inside and outside the function.
+#
+# Observe the difference.
+
+
+# Write your code below 👇
+    
+name = "Prabin"
+def student():
+    name = "Rahul"
+    print("Inside Function :", name)
+
+student()
+print("Outside Function :", name)
+
+
+# ==================================================
+# Practice 36
+#
+# Create:
+#
+# tax_rate = 10
+#
+# Create:
+#
+# calculate_tax(salary)
+#
+# Use the global tax_rate to calculate tax.
+#
+# Return the tax amount.
+
+
+# Write your code below 👇
+tax_rate = 10
+def calculate_tax(salary):
+    tax = salary * tax_rate / 100
+    return tax
+print(calculate_tax(50000))
+
+
+# ==================================================
+# Practice 37
+#
+# Create:
+#
+# counter = 0
+#
+# Create a function:
+#
+# increase_counter()
+#
+# Use the global keyword to increase counter by 1.
+#
+# Call the function three times.
+#
+# Expected:
+# 3
+
+
+# Write your code below 👇
+counter = 0
+def increase_counter():
+    global counter
+    counter = counter + 1
+increase_counter()
+increase_counter()
+increase_counter()
+
+
+# ==================================================
+# Practice 38
+#
+# Create:
+#
+# total_sales = 100000
+#
+# Create:
+#
+# calculate_profit(cost)
+#
+# Calculate:
+#
+# profit = total_sales - cost
+#
+# Return the profit.
+
+
+# Write your code below 👇
+
+
+
+# ==================================================
+# Practice 39
+#
+# Create a global variable:
+#
+# department = "Data Analytics"
+#
+# Create a function:
+#
+# employee_info(name)
+#
+# Print:
+#
+# Employee Name
+# Department
+#
+# Use the global department variable.
+
+
+# Write your code below 👇
+department = "Data Analytics"
+def employee_info(name):
+    print("Employee Name :", name)
+    print("Department    :", department)
+
+employee_info("Prabin")
+
+
+# ==================================================
+# Practice 40 : Data Analyst Task
+#
+# Create:
+#
+# tax_rate = 10
+#
+# Create a function:
+#
+# calculate_net_salary(salary)
+#
+# Requirements:
+#
+# 1. Use the global tax_rate.
+# 2. Calculate tax.
+# 3. Calculate net salary.
+# 4. Return net salary.
+#
+# Formula:
+#
+# tax = salary * tax_rate / 100
+# net_salary = salary - tax
+#
+# Example:
+#
+# calculate_net_salary(50000)
+#
+# Expected:
+# 45000.0
+
+
+# Write your code below 👇
+tax_rate = 10
+def calculate_net_salary(salary):
+    tax = salary * tax_rate / 100
+    net_salary = salary - tax
+    return net_salary
+print(calculate_net_salary(50000))
