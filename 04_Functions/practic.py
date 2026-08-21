@@ -1086,3 +1086,270 @@ def calculate_net_salary(salary):
     net_salary = salary - tax
     return net_salary
 print(calculate_net_salary(50000))
+
+
+# ==================================================
+# Topic 5 : Functions with Collections
+# ==================================================
+
+# Practice 41
+#
+# Create a function:
+#
+# print_fruits(fruits)
+#
+# Print every fruit from the list.
+#
+# Example:
+# ["Apple", "Banana", "Mango"]
+
+
+# Write your code below 👇
+def print_fruits(fruits):
+    for fruit in fruits:
+        print(fruit)
+fruits = ["Apple", "Banana", "Mango"]
+print_fruits(fruits)
+
+
+# ==================================================
+# Practice 42
+#
+# Create a function:
+#
+# calculate_total(numbers)
+#
+# Return the sum of all numbers in a list.
+#
+# Example:
+# [10, 20, 30, 40]
+#
+# Expected:
+# 100
+
+
+# Write your code below 👇
+def calculate_total(numbers):
+    total = sum(numbers)
+    return total
+numbers = [10, 20, 30, 40]
+print(calculate_total(numbers))
+
+
+# ==================================================
+# Practice 43
+#
+# Create a function:
+#
+# calculate_average(numbers)
+#
+# Return the average of numbers in a list.
+#
+# Example:
+# [80, 70, 90]
+#
+# Expected:
+# 80.0
+
+
+# Write your code below 👇
+def calculate_average(numbers):
+    total = sum(numbers)
+    average = total / len(numbers)
+    return average
+numbers = [80, 70, 90]
+print(calculate_average(numbers))
+
+
+# ==================================================
+# Practice 44
+#
+# Create a function:
+#
+# find_highest(numbers)
+#
+# Return the highest number from the list.
+#
+# Example:
+# [25, 80, 45, 90, 60]
+#
+# Expected:
+# 90
+
+
+# Write your code below 👇
+def find_highest(numbers):
+    highest = max(numbers)
+    return highest
+numbers = [25, 80, 45, 90, 60]
+print(find_highest(numbers))
+
+
+# ==================================================
+# Practice 45
+#
+# Create a function:
+#
+# find_lowest(numbers)
+#
+# Return the lowest number from the list.
+#
+# Example:
+# [25, 80, 45, 90, 60]
+#
+# Expected:
+# 25
+
+
+# Write your code below 👇
+def find_lowest(numbers):
+    lowest = min(numbers)
+    return lowest
+numbers = [25, 80, 45, 90, 60]
+print(find_lowest(numbers))
+
+
+# ==================================================
+# Practice 46
+#
+# Create a function:
+#
+# passing_marks(marks)
+#
+# Create a new list containing only marks >= 40.
+#
+# Return the new list.
+#
+# Example:
+# [35, 80, 55, 28, 92]
+#
+# Expected:
+# [80, 55, 92]
+
+
+# Write your code below 👇
+def passing_marks(marks):
+    passed = []
+    for mark in marks:
+        if mark >= 40:
+            passed.append(mark)
+    return passed
+marks = [35, 80, 55, 28, 92]
+print(passing_marks(marks))
+
+
+# ==================================================
+# Practice 47
+#
+# Create a function:
+#
+# count_unique(numbers)
+#
+# Accept a set and return the number of unique values.
+#
+# Example:
+# {10, 20, 20, 30, 30}
+#
+# Expected:
+# 3
+
+
+# Write your code below 👇
+def count_unique(numbers):
+    return len(numbers)
+numbers = {10, 20, 20, 30, 30}
+print(count_unique(numbers))
+
+
+# ==================================================
+# Practice 48
+#
+# Create a function:
+#
+# student_info(student)
+#
+# Accept a dictionary containing:
+#
+# name
+# age
+# course
+#
+# Print all student information.
+
+
+# Write your code below 👇
+def student_info(student):
+    print("Name   :", student["name"])
+    print("Age    :", student["age"])
+    print("Course :", student["course"])
+student = {"name": "Prabin", "age": 22, "course": "BCA"}
+student_info(student)
+
+
+# ==================================================
+# Practice 49
+#
+# Create a function:
+#
+# calculate_salary(employee)
+#
+# Accept a dictionary containing:
+#
+# basic_salary
+# bonus
+#
+# Return the total salary.
+
+
+# Write your code below 👇
+def calculate_salary(employee):
+    basic_salary = employee["basic_salary"]
+    bonus = employee["bonus"]
+    total_salary = basic_salary + bonus
+    return total_salary
+employee = {"basic_salary":     30000, "bonus": 5000}
+print(calculate_salary(employee))
+
+
+# ==================================================
+# Practice 50 : Data Analyst Task
+#
+# Create a function:
+#
+# sales_summary(sales)
+#
+# The function should calculate:
+#
+# 1. Total sales
+# 2. Average sales
+# 3. Highest sales
+# 4. Lowest sales
+#
+# Return all four values.
+#
+# Example:
+#
+# sales = [25000, 30000, 45000, 38000, 50000]
+#
+# Expected:
+#
+# Total    : 188000
+# Average  : 37600.0
+# Highest  : 50000
+# Lowest   : 25000
+
+
+# Write your code below 👇
+def sales_summary(sales):
+    total = sum(sales)
+    average = total / len(sales)
+    highest = max(sales)
+    lowest = min(sales)
+    return total, average, highest, lowest
+
+sales = [25000, 30000, 45000, 38000, 50000]
+total, average, highest, lowest = sales_summary(sales)
+print("Total    :", total)
+print("Average  :", average)
+print("Highest  :", highest)
+print("Lowest   :", lowest)
